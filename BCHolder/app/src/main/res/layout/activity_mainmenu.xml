@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+
+
+
+    <Button
+        android:layout_width="123dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/profilePicture"
+        android:layout_row="1"
+        android:layout_column="1"
+        android:background="@drawable/profilepicture"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/welcomeText"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="31dp"
+        android:id="@+id/welcomeText"
+        android:layout_row="0"
+        android:layout_column="1"
+        android:background="@drawable/welcometext"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/createButton"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/createtext"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/logoButton"
+        android:background="@drawable/logonew"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="102dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchButton"
+        android:layout_row="2"
+        android:layout_column="3"
+        android:background="@drawable/search"
+        android:layout_below="@+id/profilePicture"
+        android:layout_toEndOf="@+id/welcomeText"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/shareButton"
+        android:background="@drawable/sharebutton"
+        android:layout_alignTop="@+id/options"
+        android:layout_alignBottom="@+id/options"
+        android:layout_alignStart="@+id/searchButton" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cardsButton"
+        android:background="@drawable/cards"
+        android:layout_toStartOf="@+id/profilePicture"
+        android:layout_alignBottom="@+id/searchButton"
+        android:layout_alignTop="@+id/searchButton" />
+
+    <Button
+        android:layout_width="106dp"
+        android:layout_height="93dp"
+        android:id="@+id/options"
+        android:layout_row="9"
+        android:layout_column="0"
+        android:background="@drawable/options"
+        android:layout_marginBottom="25dp"
+        android:layout_above="@+id/logoButton"
+        android:layout_alignEnd="@+id/cardsButton" />
+
+</RelativeLayout>
