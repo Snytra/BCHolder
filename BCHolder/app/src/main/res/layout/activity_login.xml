@@ -1,4 +1,4 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
@@ -10,11 +10,92 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.lubaka.bcholder.LoginActivity"
     android:weightSum="1"
-    android:layout_weight="1"
-    android:background="@drawable/background">
+    android:background="@drawable/blurbackground">
 
 
-    <!-- Login progress -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
 
+        <Button
+            android:layout_width="116dp"
+            android:layout_height="28dp"
+            android:id="@+id/signInButton"
+            android:background="@drawable/signin"
+            android:layout_marginTop="50dp" />
 
-</RelativeLayout>
+        <ImageView
+            android:layout_width="114dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/lineunderlogin"
+            android:id="@+id/imageView3" />
+
+        <TextView
+            android:layout_width="75dp"
+            android:layout_height="15dp"
+            android:id="@+id/emailText"
+            android:background="@drawable/emailtext"
+            android:layout_marginTop="30dp" />
+
+        <EditText
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/emailField"
+            android:background="@drawable/emailpasswordfield"
+            android:layout_marginTop="10dp"
+            android:layout_height="39dp"
+            android:layout_width="342dp" />
+
+        <TextView
+            android:layout_width="105dp"
+            android:layout_height="15dp"
+            android:id="@+id/passwordText"
+            android:background="@drawable/passwordtext"
+            android:layout_marginTop="20dp" />
+
+        <EditText
+            android:layout_width="342dp"
+            android:layout_height="39dp"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/passwordField"
+            android:background="@drawable/emailpasswordfield"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0.00" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/keepMeIn"
+            android:text="Keep me Signed in"
+            android:textColor="#ffffff"
+            android:checked="false"
+            android:layout_marginTop="20dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/loginButton"
+            android:background="@drawable/loginbuttontexton"
+            android:layout_marginTop="25dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/lineunderloginbutton"
+            android:id="@+id/imageView2"
+            android:layout_marginTop="30dp" />
+
+        <Button
+            android:layout_width="138dp"
+            android:layout_height="25dp"
+            android:id="@+id/forgotPass"
+            android:background="@drawable/forgotpassword"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="25dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
